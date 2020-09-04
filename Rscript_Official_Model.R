@@ -198,7 +198,7 @@ cost<-function(u)
 
 	
 U<-memoise(function(k,u,e)
-{-KL(state(e), function(n){L((k-1),n,u)})})
+{-KL(state(e), function(n){L((k-1),n,u)} - cost(u))})
 
 #SoftMax rule
 
