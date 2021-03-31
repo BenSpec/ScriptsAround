@@ -193,12 +193,13 @@ cost<-function(u)
 {return(0)}
 
 	#utility function for Sk
-#Uk(u,epis) = - KL divergence between L(k-1)_u and epis, where L(k-1)_u is the posterior distribution of level(k-1)-speaker after processsing message u, and epis is the epistemic state of the speaker
+#Uk(u,epis) = - KL divergence between L(k-1)_u and epis, where L(k-1)_u is the posterior distribution of level(k-1)-speaker after processsing message u,
+#and epis is the epistemic state of the speaker, minsu tcost(u)
 
 
 	
 U<-memoise(function(k,u,e)
-{-KL(state(e), function(n){L((k-1),n,u)} - cost(u))})
+{-KL(state(e), function(n){L((k-1),n,u)}) - cost(u)})
 
 #SoftMax rule
 
