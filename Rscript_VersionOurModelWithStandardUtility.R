@@ -86,7 +86,7 @@ row.names(EpisTable)<-c(0,1,2,3,4,5,6,7,8)
 
 #Used here: arbitrary numbers, meant to ensure that the probability distribution over states of the world (numbers) is reasonable...
 
-ProbaEpisAux<-c(2,8,32,128,512,2,8,32,128)
+ProbaEpisAux<-c(1,4,16,64,256,1,4,16,64)
 #ProbaEpisAux<-c(1,2,3,4,5,2,3,4,5)
 #ProbaEpis<-c(1/426, 2/213,8/213, 32/213, 128/213, 1/426,2/213,8/213,32/213)
 ProbaEpis<-ProbaEpisAux/sum(ProbaEpisAux)
