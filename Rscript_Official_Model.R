@@ -88,7 +88,8 @@ outer(0:(nworlds-1), 0:(nepis-1), Vectorize(P_n_given_e))
 #Used here: arbitrary numbers, meant to ensure that the probability distribution over states of the world (numbers) is reasonable...
 
 #Weights
-ProbaEpisAux<-c(2,8,32,128,512,2,8,32,128)
+ProbaEpisAux<-c(1,4,16,64,256,1,4,16,64)
+
 
 #Probabilities after normalizing
 ProbaEpis<-ProbaEpisAux/sum(ProbaEpisAux)
